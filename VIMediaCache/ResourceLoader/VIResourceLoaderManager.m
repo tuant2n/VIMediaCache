@@ -101,6 +101,9 @@ static NSString *kCacheScheme = @"VIMediaCache:";
     }
 
     NSURL *assetURL = [NSURL URLWithString:[kCacheScheme stringByAppendingString:[url absoluteString]]];
+    if (assetURL == nil) {
+            return url;
+    }
     return assetURL;
 }
 
