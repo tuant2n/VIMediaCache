@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
+static NSString *kCacheScheme = @"VIMediaCache:";
+
 @protocol VIResourceLoaderManagerDelegate;
 
 @interface VIResourceLoaderManager : NSObject <AVAssetResourceLoaderDelegate>
